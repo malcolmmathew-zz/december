@@ -1,0 +1,14 @@
+<h1>Below is your YOUNGHOO list!</h1>
+{% if latest_task_list %}
+	<ul>
+	{% for task in latest_task_list %}
+		<li><a href="/tasker/{{ task.id }}/">{{ task.task_name }}</a></li>
+		<ul><li><a href="/tasker/{{ task.id }}/edit/">Edit this</a></li></ul>
+	
+	{% endfor %}
+</ul>
+{% else %}
+	<p>No tasks today</p>
+{% endif %}
+
+<p><a href="/tasker/new/">Add a new YOUNGHOO</a></p>
