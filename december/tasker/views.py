@@ -41,5 +41,7 @@ def new(request):
 		form = AddForm()
 	time = str(timezone.now())
 	lol = time
-	return render(request, 'tasker/new.html', {'time': lol, 'form': form})
+	return render(request, 'tasker/new.html', {'form': form})
 
+def delete(request):
+	return render(request, 'tasker/index.html', context)

@@ -7,4 +7,5 @@ urlpatterns = patterns('',
 	url(r'^(?P<task_id>\d+)/$', views.detail, name='detail'),
 	url(r'^(?P<task_id>\d+)/edit/$', views.edit, name='edit'),
 	url(r'^new/$', views.new, name='new'),	
+	url(r'^(?P<task_id>\d+)/delete/$', views.delete, name='new'),	
 )
